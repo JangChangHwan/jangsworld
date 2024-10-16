@@ -1,0 +1,15 @@
+# 메뉴 파일 작성 요령
+# 코드 탭 표시 이름 탭 메뉴 종류 탭 부모 코드 탭 자식 코드혹은 링크 혹은 데이터
+# 메뉴 종류: 메뉴 menu, 목록 list, 본문 view, 최상위
+# 0
+top	장스월드	menu		sorisem
+# 0-1 소리샘
+sorisem	소리샘	menu	top	sorisemnotice|potion
+# 0-1-1 소리샘 - 1. 소리샘 공지사항 
+sorisemnotice	1. 소리샘 공지사항	list	sorisem	https://www.sorisem.net/bbs/board.php?bo_table=sorisemnotice
+# 0-1-4 소리샘 - 4. 동호회
+potion	4. 동호회	menu	sorisem	circle
+# 0-1-4-1 소리샘 - 4. 동호회 - 1. 일반 동호회
+circle	1. 일반 동호회	menu	potion	
+
+
